@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker my_voila_app:app
+web: gunicorn oneleague:app
