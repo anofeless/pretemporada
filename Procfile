@@ -1,1 +1,1 @@
-web: gunicorn -w 4 voila Interfaz.ipynb 
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker "voila Interfaz.ipynb" 
