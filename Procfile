@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser --debug --Voila.ip=0.0.0.0 Interfaz.ipynb
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker my_voila_app:app
