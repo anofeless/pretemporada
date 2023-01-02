@@ -1,1 +1,1 @@
-web: gunicorn oneleague:app
+web: gunicorn -b :$PORT oneleague:app
